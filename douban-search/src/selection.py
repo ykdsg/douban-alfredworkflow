@@ -1,10 +1,10 @@
 # coding: utf-8
 import sys
 import json
-import ConfigParser
+import configparser
 
 
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.read('conf')
 selections = config.get('base', 'selections').split()
 
